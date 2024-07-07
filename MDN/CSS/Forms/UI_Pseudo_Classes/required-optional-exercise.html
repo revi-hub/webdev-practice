@@ -68,7 +68,27 @@
         font-family: inherit;
         font-size: 0.75rem;
         padding: 5px 8px;
-      } 
+      }
+
+      input:invalid {
+        border: 2px solid red
+      }
+      
+      input:invalid + span::after {
+        position: absolute;
+        left: 7px;
+        top: 5px;
+        content: "✖";
+        color: red;
+      }
+
+      input:valid + span::after {
+        position: absolute;
+        left: 7px;
+        top: 5px;
+        content: "✓";
+        color: green;
+      }
     </style>
   </head>
 
