@@ -49,15 +49,26 @@
         background-color: #eee;
       }
 
-      input + span {
-        position: relative;
-      }
-
-
       button {
         width: 60%;
         margin: 0 auto;
       }
+
+      input:required + span {
+        position: relative;
+      }
+
+      input:required + span::before {
+        position: absolute;
+        background: black;
+        content: "required";
+        color: white;
+        top: -26px;
+        left: -68px;
+        font-family: inherit;
+        font-size: 0.75rem;
+        padding: 5px 8px;
+      } 
     </style>
   </head>
 
