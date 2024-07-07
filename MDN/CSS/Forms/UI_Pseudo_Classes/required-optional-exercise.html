@@ -73,19 +73,19 @@
       input:invalid {
         border: 2px solid red
       }
-      
-      input:invalid + span::after {
+
+      input + span::after {
         position: absolute;
         left: 7px;
         top: 5px;
+      }
+      
+      input:invalid + span::after {
         content: "✖";
         color: red;
       }
 
       input:valid + span::after {
-        position: absolute;
-        left: 7px;
-        top: 5px;
         content: "✓";
         color: green;
       }
