@@ -24,7 +24,8 @@
       <ul>
         <li>
           <label for="uname">User name: (required)</label>
-          <input type="text" name="uname" id="uname" required>
+          <input type="text" name="uname" id="uname" required 
+          minlength="5" max="20">
         </li>
         <li>
           <label for="email">Email address: (required)</label>
@@ -33,11 +34,11 @@
         <li>
           <label for="phone">Phone number: (required)</label>
           <input type="tel" name="phone" id="phone" required 
-          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="15">
         </li>
         <li>
           <label for="comment">Comment: </label>
-          <textarea name="comment" id="comment">
+          <textarea name="comment" id="comment" maxlength="200">
           </textarea>
         </li>
         <li>
