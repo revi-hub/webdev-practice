@@ -28,11 +28,12 @@
         </li>
         <li>
           <label for="email">Email address: (required)</label>
-          <input type="text" name="email" id="email" required>
+          <input type="email" name="email" id="email" required>
         </li>
         <li>
           <label for="phone">Phone number: (required)</label>
-          <input type="text" name="phone" id="phone" required>
+          <input type="tel" name="phone" id="phone" required 
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
         </li>
         <li>
           <label for="comment">Comment: </label>
