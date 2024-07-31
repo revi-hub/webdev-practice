@@ -33,3 +33,7 @@ p {
 .grid-line-example > .grid-item-3, .grid-line-example > .grid-item-6 {
     border-left: 1px solid red;
 }
+
+.grid-cell-example > .grid-item-2 {
+    background-color: red;
+}
