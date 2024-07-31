@@ -1,8 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#main-wrapper {
+    text-align: center;
+}
+
+.grid-wrapper {
+    display: block;
+    margin-left: calc(50% - 75px);
+}
+
 p {
     max-width: 64ch;
 }
 
 .grid {
+    margin: 0 auto;
     display: grid;
     grid-template: 50px 50px / 50px 50px 50px;
 }
