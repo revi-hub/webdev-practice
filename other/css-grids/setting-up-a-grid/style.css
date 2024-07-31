@@ -34,6 +34,6 @@ p {
     border-left: 1px solid red;
 }
 
-.grid-cell-example > .grid-item-2 {
+.grid-cell-example > .grid-item-2,  .grid-track-example > .grid-item:nth-child(n+4) {
     background-color: red;
 }
